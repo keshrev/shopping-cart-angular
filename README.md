@@ -40,7 +40,9 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 #Refer `https://github.com/angular/angular-cli/wiki/build` for detailed build settings.
 
-Application Screens 
+
+# Application Screens(app is combination of both https://github.com/keshrev/shopping-cart-angular and https://github.com/keshrev/shopping-cart-node.git )
+
 
 #"Initial screen Loading"
 ![alt tag](https://github.com/keshrev/shopping-cart-screens/blob/master/Screen%20Shot%202018-05-07%20at%2007.55.50.png "Initial screen Loading")
