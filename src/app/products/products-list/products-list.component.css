@@ -1,0 +1,30 @@
+.container-top{
+    margin-top: 5.5% !important;
+}
+.product-thumbnail{
+    text-align: center;
+}
+.product-thumbnail img{
+    display: inline-block;
+    display: -webkit-inline-box;
+    margin-top:3%;
+    width: 100%;
+    position: relative;
+    height: 195px;
+}
+.product-details{
+    text-align: center;
+}
+.product-details .add-to-cart{
+    float: right;
+}
+.product-details .price{
+    float: left;
+    cursor: unset;
+}
+.remove-from-cart{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}

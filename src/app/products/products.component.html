@@ -1,0 +1,17 @@
+<div [ngSwitch]="productsMap.status">
+  <!-- Displaying Loader to indicate the user that fetching products is in progress -->
+  <div *ngSwitchCase="'loading'" class="full-page-loader">
+  </div>
+  <!--When products list is empty  -->
+  <div *ngSwitchCase="204" class="text-center">
+    <h1>{{ 'NTHNG_DSPLY' | translate}}</h1>
+  </div>
+  <!-- When the products list have content to display  -->
+  <div *ngSwitchCase="200">
+    <!-- Move the below nav component selector to re-use the same as a common nav-bar   
+    for all pages by moving nav component to app module -->
+    <app-nav-header [cartCount]="productsMap.productsData.cartCount"></app-nav-header>
+    <!-- List component to display the list of components -->
+    <app-products-list [productList]="productsMap.productsData.list" (updateCart)="updateCartCount($event)"></app-products-list>
+  </div>
+</div>

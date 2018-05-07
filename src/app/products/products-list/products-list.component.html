@@ -1,0 +1,26 @@
+<div class="container container-top">
+  <div class="row no-gutter">
+    <div class="col-md-3" *ngFor="let product of productList;let idx =index;">
+      <div class="thumbnail bootsnipp-thumb">
+        <!--To remove the product from cart -->
+        <div class="remove-from-cart" *ngIf="product.status==1" (click)="addToCart(product,idx,0)">
+          <button class="btn btn-danger" type="button" title="{{'RM_CRT' | translate }}"><span class="glyphicon glyphicon-remove"></span></button>
+        </div>
+        <!--To Disaply cart images, if failed default fall back image is used.  -->
+        <div class="product-thumbnail"><img class="img-responsive" [src]="product.imageUrl ? product.imageUrl : 'assets/images/default-cart.png'" src-fallback="assets/images/default-cart.png"
+          /></div>
+        <div class="clearfix"></div>
+        <div class="product-details">
+          <h5>{{product.name || ''}}</h5>
+          <div>
+            <div class="btn btn-warning price">&#x20b9; {{product.price || ''}}</div>
+            <!--To add the products to cart. this will be disabled if the product is already in cart.  -->
+            <button class="btn btn-success add-to-cart" (click)="addToCart(product,idx,1)" [disabled]="product.status==1">{{'ADD_CRT' | translate}}</button>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

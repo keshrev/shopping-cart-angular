@@ -1,0 +1,18 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!--Application Title  -->
+      <a class="navbar-brand">{{'APP_TTL' | translate}}</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li >
+          <!--To display cart info  -->
+          <a> <span [ngClass]="{'blink-count' : blinkCount}">{{cartCount || 0}}</span> <span class="glyphicon glyphicon-shopping-cart"></span> </a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>

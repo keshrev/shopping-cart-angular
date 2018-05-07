@@ -1,0 +1,10 @@
+.blink-count{
+    color: green;
+    font-size: 400%;
+    font-weight: bolder;
+    position: absolute;
+    right: 70%;
+}
+.navbar-nav a{
+    font-size: larger;
+}
