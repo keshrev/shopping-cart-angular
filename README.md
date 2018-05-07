@@ -55,5 +55,5 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 #Products added to cart - Provided remove button on right top of ech product to remove product from cart
 ![alt tag](https://github.com/keshrev/shopping-cart-screens/blob/master/Screen%20Shot%202018-05-07%20at%2007.56.47.png "Products add/remove to/from cart")
 
-# Higlinghting the cart count whencart updated 
+# Higlinghting the cart count when cart updated 
 ![alt tag](https://github.com/keshrev/shopping-cart-screens/blob/master/Screen%20Shot%202018-05-07%20at%2007.58.30.png "cart count update")
