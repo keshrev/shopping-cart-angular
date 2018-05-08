@@ -1,8 +1,4 @@
-# Shopping cart App (Angular front-end application)
-
-#Developed by Keshava R 
-#Email : kesh.rev@gmail.com
-#Mobile : +919900881552
+# Simple shopping cart App (Angular front-end application)
 
 #Tech stack - Refer package.json
 
